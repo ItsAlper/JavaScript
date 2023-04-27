@@ -68,7 +68,7 @@ th {
     th1.textContent = 'Značka';
     th2.textContent = 'Název';
     th3.textContent = '% Alkoholu';
-    // Funkcí .appendChild můžeme právě vytvářet další sloupce či řádky, což se zde právě děje
+    // Funkcí .appendChild vytvářím další sloupce či řádky
     headerRow.appendChild(th1);
     headerRow.appendChild(th2);
     headerRow.appendChild(th3);
@@ -77,7 +77,7 @@ th {
     table.appendChild(thead);
     table.appendChild(tbody);
 
-    // Dodání dat do tabulky z API
+    // Dodávám data do tabulky z API
     data.forEach((beer) => {
       const row = document.createElement('tr');
       const td1 = document.createElement('td');
